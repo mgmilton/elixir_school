@@ -15,3 +15,16 @@ result will return 13
 
 #match error if the first value in tuples are not equivalent
 {:ok, result} = {:error, :oops}
+
+
+#Pattern matching on lists
+[a, b, c] = [1, 2, 3]
+a #returns 1
+
+[h | t] = [1, 2, 3]
+h #returns 1
+t #returns [2, 3]
+
+#prepending to the start of list
+list = [1, 2, 3]
+[0 | list]
