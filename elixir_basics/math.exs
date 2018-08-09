@@ -35,5 +35,5 @@ is_function(add, 2) # check if add is a function that expects exactly 2 argument
 
 #Anonymous functions are closures
 
-add = fn a, b -> add.(a,a) end 
+add = fn a, b -> add.(a,a) end
 double = fn a -> add,(a, a) end
