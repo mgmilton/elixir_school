@@ -1,7 +1,7 @@
 defmodule Todos.TodoControllerTest do
     use Todos.ConnCase
-
-    test "#{index} renders a list of todos" do
+    import Todos.Factory
+    test  "index() renders a list of todos" do
       conn = build_conn()
       todo = insert(:todo)
 
