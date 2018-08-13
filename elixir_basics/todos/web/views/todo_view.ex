@@ -16,3 +16,9 @@ defmodule Todos.TodoView do
         }
     end
 end
+
+defmodule Todos.TodoView do
+  def render("show.json", %{todo: todo}) do
+      %{todo: todo_json(todo)}
+  end
+end
