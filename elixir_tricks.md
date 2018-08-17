@@ -7,7 +7,7 @@ mix test.watch
 ```
 
 #Using IO.inspect in a pipeline
-For evaluating data in the middle of the pipeline, ```elixir IO.inspect``` returns whatever you pass as its first argument, and label the output.
+For evaluating data in the middle of the pipeline, ```IO.inspect``` returns whatever you pass as its first argument, and label the output.
 ```elixir
 [1,2,3]
 IO.inspect(label: "original data")
